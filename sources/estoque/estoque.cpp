@@ -15,7 +15,7 @@ ACOES screenMenu(){
     return (ACOES) escolha;
 }
 
-void exibirProdutos (vector<struct produto> &lista){
+void addProdutos (vector<struct produto> &lista){
     struct produto newProduto;
 
     cout << "Informe o código: " << endl;
