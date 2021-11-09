@@ -1,0 +1,6 @@
+if (ESTOQUE_BUILD_UNIT_TESTS)
+    add_subdirectory(unit_tests)
+endif ()
+if (ESTOQUE_BUILD_BENCHMARKS)
+    add_subdirectory(benchmark)
+endif ()
