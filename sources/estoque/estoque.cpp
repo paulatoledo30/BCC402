@@ -1,3 +1,4 @@
+#include "estoque.h"
 #include <iostream>
 
 using namespace std;
