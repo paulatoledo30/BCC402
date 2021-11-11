@@ -1,4 +1,4 @@
-add_library(estoquelib
+add_library(estoque
         estoque/estoque.h
         estoque/estoque.cpp
         ../tests/unit_tests/ut_estoque.cpp)

@@ -4,15 +4,16 @@
 using namespace std;
 
 int main() {
-    std::vector<struct produto> listaProdutos;
+    std::queue<Produto> listaProdutos;
+    Estoque estoque;
     while(true){
         ACOES escolha = screenMenu();
         switch (escolha) {
             case INSERIR_PRODUTO:
-                addProdutos(listaProdutos);
+                estoque.addProdutos(listaProdutos);
                 break;
             case EXIBIR_PRODUTOS:
-                exibirProdutos(listaProdutos);
+                estoque.exibirProdutos(listaProdutos);
                 break;
             case SAIR:
                 return 0;
