@@ -31,7 +31,7 @@ public:
 
     //FUNÇÕES
     void exibeItensEstoque(Estoque);
-    void addItemEstoque ( int , double , const std::string &,const std::string &, int , int , int);
+    void addItemEstoque ( int , double , const std::string &,const std::string &, int , int , int, int);
     void addItem (Item);
     int concorrents (std::vector<Item>);
     void comecarContar(int);

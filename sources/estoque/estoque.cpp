@@ -10,7 +10,7 @@ struct tm* recuperarData(){
     return localtime(&tt);
 }
 
-void Estoque::addItemEstoque (int codigo, double preco, const std::string &fornecedor,const std::string &descricao, int dia, int mes, int ano){
+void Estoque::addItemEstoque (int codigo, double preco, const std::string &fornecedor,const std::string &descricao, int dia, int mes, int ano, int duracao){
     Item item;
     item.setCodigo(codigo);
     item.setPreco(preco);
@@ -19,6 +19,7 @@ void Estoque::addItemEstoque (int codigo, double preco, const std::string &forne
     item.setDia(dia);
     item.setMes(mes);
     item.setAno(ano);
+    item.setDuracao(duracao);
     addItem(item);
 }
 

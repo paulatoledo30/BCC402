@@ -4,28 +4,14 @@
 using namespace std;
 
 Estoque createEstoque(){
-
+    Estoque* estoque = new Estoque();
+    estoque->addItemEstoque(10, 12.2, "Fornecedor teste", "Produto Teste", 25, 12,2021, 25);
+    estoque->exibeItensEstoque(*estoque);
+    estoque->concorrents(estoque->getItens());
+    return *estoque;
 }
 
 int main() {
-    std::queue<Produto> listaProdutos;
-    Estoque estoque;
-    while(true){
-        ACOES escolha = screenMenu();
-        switch (escolha) {
-            case INSERIR_PRODUTO:
-                estoque.addProdutos(listaProdutos);
-                break;
-            case EXIBIR_PRODUTOS:
-                estoque.exibirProdutos(listaProdutos);
-                break;
-            case SAIR:
-                return 0;
-                break;
-            default:
-                std::cout << "Opção invalida" << std::endl;
-                break;
-        }
-    }
+    Estoque estoque = createEstoque();
     return 0;
 }
