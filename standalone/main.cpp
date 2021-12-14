@@ -3,6 +3,10 @@
 
 using namespace std;
 
+Estoque createEstoque(){
+
+}
+
 int main() {
     std::queue<Produto> listaProdutos;
     Estoque estoque;

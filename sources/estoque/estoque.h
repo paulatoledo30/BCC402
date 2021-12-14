@@ -4,6 +4,14 @@
 #include <string>
 #include <vector>
 #include <queue>
+#include <ctime>
+#include <user/user.h>
+#include <item/item.h>
+#include <iomanip>
+#include <iostream>
+#include <cstdlib>
+#include <unistd.h>
+#include <thread>
 
 template <class Type, class Container = std::vector <Type>>
 class queue;
@@ -13,40 +21,24 @@ enum ACOES {
 };
 
 class Estoque{
-    private:
-        int codigo;
-        double preco;
-        std::string fornecedor;
-        std::string descricao;
+private:
+    std::vector <Item> itens;
 
-    public:
-        //CONSTRUTORES
-        Estoque();
-        Estoque(int codigo, double preco, const string &fornecedor, const string &descricao);
+public:
+    //CONSTRUTORES
+    Estoque();
+    Estoque(int codigo, double preco, const string &fornecedor, const string &descricao, int dia, int mes, int ano, int duracao);
 
-        //GET
-        int Estoque::getCodigo();
-        double Estoque::getPreco();
-        const string &Estoque::getFornecedor();
-        const string &Estoque::getDescricao();
+    //FUNÇÕES
+    void exibeItensEstoque(Estoque);
+    void addItemEstoque ( int , double , const std::string &,const std::string &, int , int , int);
+    void addItem (Item);
+    int concorrents (std::vector<Item>);
+    void comecarContar(int);
+    const std::vector <Item > &getItens();
+    void setItens( const std::vector <Item> & );
 
-        //SET
-        void Estoque::setCodigo(int codigo);
-        void Estoque::setPreco(double preco);
-        void Estoque::setFornecedor(const string &fornecedor);
-        void Estoque::setDescricao(const string &descricao);
-
-        //FUNÇÕES
-        ACOES screenMenu();
-        void exibirProdutos(std::queue<class Estoque> &lista);
-        void addProdutos(std::queue<class Estoque> &lista);
-
-        struct produto{
-            int codigo = 0;
-            double preco = 0;
-            std::string fornecedor;
-            std::string descricao;
-        }
+    virtual ~Estoque();
 }
 
 
