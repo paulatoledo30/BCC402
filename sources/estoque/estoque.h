@@ -5,8 +5,7 @@
 #include <vector>
 #include <queue>
 #include <ctime>
-#include <user/user.h>
-#include <item/item.h>
+#include <item/item.hpp>
 #include <iomanip>
 #include <iostream>
 #include <cstdlib>
@@ -27,11 +26,11 @@ private:
 public:
     //CONSTRUTORES
     Estoque();
-    Estoque(int codigo, double preco, const string &fornecedor, const string &descricao, int dia, int mes, int ano, int duracao);
+    Estoque(int codigo, double preco,  std::string fornecedor,  std::string descricao, int dia, int mes, int ano, int duracao);
 
     //FUNÇÕES
     void exibeItensEstoque(Estoque);
-    void addItemEstoque ( int , double , const std::string &,const std::string &, int , int , int, int);
+    void addItemEstoque (int codigo, double preco,  std::string fornecedor, std::string descricao, int dia, int mes, int ano, int duracao);
     void addItem (Item);
     int concorrents (std::vector<Item>);
     void comecarContar(int);
@@ -39,7 +38,7 @@ public:
     void setItens( const std::vector <Item> & );
 
     virtual ~Estoque();
-}
+};
 
 
 

@@ -1,35 +1,35 @@
-#include "item.h"
+#include "item.hpp"
 
 //GET
-int Item::getCodigo() const {
+int Item::getCodigo(){
     return codigo;
 }
 
-double Item::getPreco() const {
+double Item::getPreco(){
     return preco;
 }
 
-const std::string &Item::getFornecedor() const {
+const std::string Item::getFornecedor(){
     return fornecedor;
 }
 
-const std::string &Item::getDescricao() const {
+const std::string Item::getDescricao(){
     return descricao;
 }
 
-int Item::getDia() const {
+int Item::getDia()  {
     return dia;
 }
 
-int Item::getMes() const {
+int Item::getMes()  {
     return mes;
 }
 
-int Item::getAno() const {
+int Item::getAno()  {
     return ano;
 }
 
-int Item::getDuracao() const {
+int Item::getDuracao()  {
     return duracao;
 }
 
@@ -42,11 +42,11 @@ void Item::setPreco(double preco) {
     Item::preco = preco;
 }
 
-void Item::setFornecedor(const std::string &fornecedor) {
+void Item::setFornecedor(std::string fornecedor) {
     Item::fornecedor = fornecedor;
 }
 
-void Item::setDescricao(const std::string &descricao) {
+void Item::setDescricao(std::string descricao) {
     Item::descricao = descricao;
 }
 void Item::setDia( int dia ) {
@@ -63,5 +63,9 @@ void Item::setDuracao( int duracao ) {
     Item::duracao = duracao;
 }
 
-Item::Item(int codigo, double preco,const std::string &fornecedor,const std::string &descricao,int dia, int mes, int ano,int duracao) : codigo(codigo),preco(preco),fornecedor(fornecedor), descricao(descricao), dia( dia ), mes( mes ), ano( ano ), duracao(duracao){}
 Item::Item() {}
+
+Item::Item( int codigo, double preco, std::string fornecedor, std::string descricao, int dia, int mes, int ano,
+            int duracao ) {
+
+}

@@ -1,0 +1,8 @@
+D:/Code/code-paula/BCC402/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/sources/CMakeFiles/rebuild_cache.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/sources/CMakeFiles/estoque.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/sources/CMakeFiles/edit_cache.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/standalone/CMakeFiles/estoqueProject.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/standalone/CMakeFiles/edit_cache.dir
+D:/Code/code-paula/BCC402/cmake-build-debug/standalone/CMakeFiles/rebuild_cache.dir

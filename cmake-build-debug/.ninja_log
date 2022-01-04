@@ -1,0 +1,12 @@
+# ninja log v5
+11	966	6630072756060202	sources/CMakeFiles/estoque.dir/__/tests/unit_tests/ut_estoque.cpp.obj	f10d8ed2af74a2e8
+13	1077	6630072757169094	standalone/CMakeFiles/estoqueProject.dir/main.cpp.obj	76a1ca93652af227
+3	2149	6630364167364041	sources/CMakeFiles/estoque.dir/estoque/estoque.cpp.obj	66674a061b00b0bb
+2149	2395	6630364169833830	sources/libestoque.a	273a05b761d2c0e5
+19	1195	6630365973039949	standalone/CMakeFiles/estoqueProject.dir/__/sources/item/item.cpp.obj	7a4dd1f6b1c52217
+14	1196	6630365973059836	sources/CMakeFiles/estoque.dir/item/item.cpp.obj	ed0fefcb36da523e
+11	1599	6630365977594320	sources/CMakeFiles/estoque.dir/__/tests/unit_tests/ut_estoque.cpp.obj	f10d8ed2af74a2e8
+16	1727	6630365978889865	standalone/CMakeFiles/estoqueProject.dir/main.cpp.obj	76a1ca93652af227
+2	1832	6630365979946482	sources/CMakeFiles/estoque.dir/estoque/estoque.cpp.obj	66674a061b00b0bb
+1833	1899	6630365980619760	sources/libestoque.a	1a834820efae908d
+1899	2013	6630365981729387	standalone/estoqueProject.exe	7d59c954e20309a7

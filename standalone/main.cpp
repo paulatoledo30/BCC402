@@ -1,5 +1,6 @@
 #include <iostream>
 #include <estoque/estoque.h>
+#include <string>
 
 using namespace std;
 
@@ -11,20 +12,20 @@ Estoque createEstoque(){
     return *estoque;
 }
 
-Estoque createEstoqueInterface(int codigo, double preco, const string &fornecedor, const string &descricao, int dia, int mes, int ano, int duracao){
-    estoque->addItemEstoque(codigo, preco, fornecedor, descricao, dia, mes, ano, duracao);
-    return *estoque;
+Estoque createEstoqueInterface(Estoque estoque, int codigo, double preco, const string &fornecedor, const string &descricao, int dia, int mes, int ano, int duracao){
+    estoque.addItemEstoque(codigo, preco, fornecedor, descricao, dia, mes, ano, duracao);
+    return estoque;
 }
 
-void exibeItens(Estoque estoque){
+void exibeItens(Estoque *estoque){
     estoque->exibeItensEstoque(*estoque);
 }
 
 int main() {
     int codigo;
     double preco;
-    const string fornecedor;
-    const string descricao;
+    std::string fornecedor;
+    std::string descricao;
     int dia;
     int mes;
     int ano;
@@ -47,10 +48,11 @@ int main() {
                 cin >> codigo;
                 cout << "Digite o preço do produto:  " << endl;
                 cin >> preco;
+                cin.ignore();
                 cout << "Digite o fornecedor do produto:  " << endl;
-                cin >> fornecedor;
+                std::getline (std::cin, fornecedor);
                 cout << "Digite a descrição do produto: " << endl;
-                cin >> descricao;
+                std::getline (std::cin, descricao);
                 cout << "Digite o dia de vencimento do produto:  " << endl;
                 cin >> dia;
                 cout << "Digite o mês de vencimento do produto:  " << endl;
@@ -59,10 +61,10 @@ int main() {
                 cin >> ano;
                 cout << "Digite a duração do produto: " << endl;
                 cin >> duracao;
-                estoque = createEstoqueInterface(codigo, preco, fornecedor, descricao, dia, mes, ano, duracao);
+                *estoque = createEstoqueInterface(*estoque,codigo, preco, fornecedor, descricao, dia, mes, ano, duracao);
                 break;
             case 2:
-                exibeItens(*estoque);
+                exibeItens(estoque);
                 break;
             case 0:
                 return 0;

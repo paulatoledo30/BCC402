@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(estoqueProject
         VERSION 0.1
-        DESCRIPTION "estoque"
+        DESCRIPTION "Organização de estoque"
         HOMEPAGE_URL "https://github.com/paulatoledo30/BCC402")
 
 set(CMAKE_CXX_STANDARD 20)

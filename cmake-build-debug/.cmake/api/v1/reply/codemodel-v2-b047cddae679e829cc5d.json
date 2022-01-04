@@ -1,0 +1,101 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "sources",
+					"jsonFile" : "directory-sources-Debug-b6fecc0fc9023ba523a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sources",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "standalone",
+					"jsonFile" : "directory-standalone-Debug-c4ad10faf7612ecf8be6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "standalone",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "estoqueProject",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "estoque::@5d746b4c5dd79dd0e6ad",
+					"jsonFile" : "target-estoque-Debug-cdabb0838be4a6641825.json",
+					"name" : "estoque",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "estoqueProject::@ddd6681f8c6183e60608",
+					"jsonFile" : "target-estoqueProject-Debug-84dced01a93cebb35a05.json",
+					"name" : "estoqueProject",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Code/code-paula/BCC402/cmake-build-debug",
+		"source" : "D:/Code/code-paula/BCC402"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
