@@ -26,7 +26,7 @@ void Estoque::addItemEstoque (int codigo, double preco, const std::string &forne
 void Estoque::addItem (Item item){
     itens.push_back(item);
 }
-                                                                     descricao(descricao) {}
+
 void Estoque::exibeItensEstoque(Estoque estoque){
     itens= estoque.getItens();
 
